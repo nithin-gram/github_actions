@@ -2,7 +2,7 @@ import subprocess
 
 def trigger_github_action():
     # Create a dummy change
-    withh open("trigger.txt", "w") as f:
+    with open("trigger.txt", "w") as f:
         f.write("Triggering GitHub Actions")
 
     # Run git commands to commit and push the change
